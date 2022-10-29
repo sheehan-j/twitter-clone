@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+}
+
+.tweet-wrapper {
+	background-color: blue;
+	height: 300px;
+	width: 700px;
+}
+
+.tweet-username {
+	font-size: 14px;
+	color: white;
+}
+
+.tweet-body {
+	font-size: 10px;
+	color: white;
+}
