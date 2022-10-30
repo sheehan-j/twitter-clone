@@ -6,19 +6,43 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<title>Home/Twitter</title>
 
+		<!-- Inter Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<!-- ******** REMOVE THIS FOR PROUCTION  <link rel="stylesheet" type="text/css" href="../public/css/main.css"> -->
 		<script defer src=/js/eventHandler.js></script>
 	</head>
 	<body>
-		<form id="tweetForm">
-			<input type="text" id="username" name="username">
-			</br>
-			<input type="text" id="tweet" name ="tweet">
-			</br>
-			<input type="submit" value="Submit">
-		</form>
-		<div id="tweetsContainer">
+		<div class="twitter-container">
+			<div class="left-section">
 
+			</div>
+
+			<div class="middle-section">
+				<div class="tweet-form-container">
+					<form id="tweetForm">
+						<input class="username-input" type="text" id="username" name="username" placeholder="Enter your username">
+						<textarea class="tweet-input" type="text" id="tweet" name ="tweet" placeholder="What's happening?"></textarea>
+						<div class="button-container">
+							<div id="errorContainer" class="visible"></div>
+							<input class="tweet-button" type="submit" value="Tweet">
+						</div>
+					</form>
+				</div>
+				<div id="tweetsContainer">
+				</div>
+				
+			</div>
+			
+			<div class="right-section">
+
+			</div>
 		</div>
 	</body>
 </html>

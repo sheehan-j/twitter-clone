@@ -2,6 +2,7 @@ const Tweet = require("../model/Tweet");
 
 const getAllTweets = async (req, res) => {
 	const tweets = await Tweet.find();
+
 	if (tweets.length === 0)
 		return res.status(204).json({ message: "No tweets found." });
 
