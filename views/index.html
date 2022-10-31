@@ -4,24 +4,30 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<title>Home/Twitter</title>
+		<title>Twitter Clone</title>
 
 		<!-- Inter Font -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
 		<!-- Bootstrap CSS only -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 		
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<!-- ******** REMOVE THIS FOR PROUCTION  <link rel="stylesheet" type="text/css" href="../public/css/main.css"> -->
+		<!-- ******** REMOVE THIS FOR PROUCTION --> <link rel="stylesheet" type="text/css" href="../public/css/main.css"> 
 		<script defer src=/js/eventHandler.js></script>
 	</head>
 	<body>
 		<div class="twitter-container">
 			<div class="left-section">
-
+				<div class="icon-container">
+					<img src="../public/img/twittericon.svg" class="icon twitter-icon">
+					<div class="icon-wrapper">
+						<img src="../public/img/homeicon.svg" class="icon home-icon">
+						<div class="icon-label">Home</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="middle-section">
@@ -41,7 +47,11 @@
 			</div>
 			
 			<div class="right-section">
-
+				<div class="news-container">
+					<div class="whats-happening-title">What's happening</div>
+					<div class="news-metadata">World News · Oct 30th, 2022</div>
+					<div class="news-content">Jordan Sheehan makes cool clone of Twitter to practice using MongoDB, Express.js, Node.js, and HTML/CSS/JS</div>
+				</div>
 			</div>
 		</div>
 	</body>

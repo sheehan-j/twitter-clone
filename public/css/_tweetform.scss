@@ -1,0 +1,77 @@
+.tweet-form-container {
+	width: 100%;
+	height: 35vh;
+	padding: 1rem !important;
+	border-bottom: 2px $border-light-gray solid;
+	margin: 0;
+}
+
+#tweetForm {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.username-input,
+.tweet-input {
+	border: none; // clear the other border applied by bootstrap
+	outline: none; // clear outline applied by bootstrap
+
+	border-bottom: 2px $faded-blue solid;
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+
+	&:focus-visible {
+		border-bottom: 2px $blue solid;
+	}
+}
+
+.username-input {
+	border-bottom: 2px $faded-blue solid;
+	padding: 0.4rem;
+}
+
+.tweet-input {
+	flex: 1;
+	padding: 0.4rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	resize: none;
+}
+
+.button-container {
+	display: flex;
+}
+
+#errorContainer {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	font-family: "Inter", sans-serif;
+	font-size: 0.8rem;
+	color: red;
+	opacity: 0;
+}
+
+#errorContainer.visible {
+	opacity: 1 !important;
+}
+
+.tweet-button {
+	background-color: $blue;
+	color: white;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	border: none;
+	border-radius: 2rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	font-size: 1rem;
+
+	&:hover {
+		background-color: rgb(31, 151, 226);
+	}
+}

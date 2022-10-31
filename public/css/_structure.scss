@@ -1,0 +1,71 @@
+.left-section {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-right: 1.5rem;
+}
+
+.right-section {
+	padding-top: 1.5rem;
+	padding-bottom: 0.5rem;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+}
+
+.middle-section {
+	height: 100vh;
+	overflow-y: scroll;
+	border-left: 2px $border-light-gray solid;
+	border-right: 2px $border-light-gray solid;
+}
+
+@media only screen and (max-width: 575px) {
+	.middle-section {
+		width: 100vw;
+	}
+	.left-section,
+	.right-section {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 567px) and (max-width: 767px) {
+	.middle-section {
+		width: 70vw;
+	}
+	.left-section {
+		width: 15vw;
+	}
+	.right-section {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.middle-section {
+		width: 60vw;
+	}
+	.left-section,
+	.right-section {
+		width: 20vw;
+	}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.middle-section {
+		width: 60vw;
+	}
+	.left-section,
+	.right-section {
+		width: 20vw;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.middle-section {
+		width: 40vw;
+	}
+	.left-section,
+	.right-section {
+		width: 30vw;
+	}
+}

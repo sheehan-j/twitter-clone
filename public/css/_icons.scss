@@ -1,0 +1,66 @@
+.icon {
+	width: 52px;
+	height: 52px;
+	padding: 5px;
+	border-radius: 50%;
+	transition: background-color 0.15s;
+}
+
+.icon-wrapper {
+	display: block;
+	border-radius: 32px;
+	transition: background-color 0.15s;
+}
+
+.icon-label {
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	font-size: 1rem;
+	vertical-align: middle;
+}
+
+.twitter-icon {
+	display: block;
+	&:hover {
+		background-color: rgba(29, 161, 242, 0.1);
+		cursor: pointer;
+	}
+}
+
+.twitter-container {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	max-height: 100vh;
+}
+
+@media only screen and (max-width: 1199px) {
+	.icon {
+		margin-left: auto;
+		display: block;
+		&:hover {
+			background-color: rgba(100, 100, 100, 0.1);
+			cursor: pointer;
+		}
+	}
+	.icon-label {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.icon-container {
+		width: 50%;
+		margin-left: auto;
+		display: block;
+	}
+	.icon-label {
+		display: inline-block;
+	}
+	.icon-wrapper {
+		&:hover {
+			background-color: rgba(100, 100, 100, 0.1);
+			cursor: pointer;
+		}
+	}
+}

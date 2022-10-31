@@ -1,0 +1,39 @@
+#tweetsContainer {
+	flex: 1;
+	padding-bottom: 1rem;
+}
+
+.tweet-container {
+	width: 100%;
+	border-bottom: 2px $border-light-gray solid;
+	padding: 1rem;
+	display: flex;
+	flex-basis: 0;
+}
+
+.tweet-profile-icon {
+	width: 3.5rem;
+}
+
+.tweet-text-container {
+	flex: 1;
+	width: 0; // This forces the width to be based on flex: 1; this prevents this container from growing beynod its limits when a tweet with no whitespace is submitted
+	margin-left: 1rem;
+	padding-top: 0.4rem;
+}
+
+.tweet-username {
+	font-family: "Inter", sans-serif;
+	font-size: 0.9rem;
+	color: black;
+	font-weight: 600;
+}
+
+.tweet-body {
+	font-family: "Inter", sans-serif;
+	font-size: 0.9rem;
+	color: rgb(71, 71, 71);
+	font-weight: 400;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}

@@ -2,6 +2,12 @@ $blue: rgba(29, 161, 242, 1);
 $faded-blue: rgba(29, 161, 242, 0.2);
 $border-light-gray: rgba(211, 211, 211, 0.8);
 
+@import "icons";
+@import "structure";
+@import "tweet";
+@import "tweetform";
+@import "news";
+
 body {
 	margin: 0;
 }
@@ -15,13 +21,6 @@ body {
 	scrollbar-width: none;
 }
 
-.twitter-container {
-	display: flex;
-	margin: 0;
-	padding: 0;
-	max-height: 100vh;
-}
-
 #noMoreTweets {
 	font-family: "Inter", sans-serif;
 	font-size: 0.9rem;
@@ -29,188 +28,4 @@ body {
 	font-weight: 400;
 	text-align: center;
 	margin-top: 1rem;
-}
-
-#tweetsContainer {
-	flex: 1;
-	padding-bottom: 1rem;
-}
-
-.tweet-container {
-	width: 100%;
-	border-bottom: 2px $border-light-gray solid;
-	padding: 1rem;
-	display: flex;
-	flex-basis: 0;
-}
-
-.tweet-profile-icon {
-	width: 3.5rem;
-}
-
-.tweet-text-container {
-	flex: 1;
-	width: 0; // This forces the width to be based on flex: 1; this prevents this container from growing beynod its limits when a tweet with no whitespace is submitted
-	margin-left: 1rem;
-	padding-top: 0.4rem;
-}
-
-.tweet-username {
-	font-family: "Inter", sans-serif;
-	font-size: 0.9rem;
-	color: black;
-	font-weight: 600;
-}
-
-.tweet-body {
-	font-family: "Inter", sans-serif;
-	font-size: 0.9rem;
-	color: rgb(71, 71, 71);
-	font-weight: 400;
-	word-wrap: break-word;
-	overflow-wrap: break-word;
-}
-
-.middle-section {
-	height: 100vh;
-	overflow-y: scroll;
-	border-left: 2px $border-light-gray solid;
-	border-right: 2px $border-light-gray solid;
-}
-
-.tweet-form-container {
-	width: 100%;
-	height: 35vh;
-	padding: 1rem !important;
-	border-bottom: 2px $border-light-gray solid;
-	margin: 0;
-}
-
-#tweetForm {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.username-input,
-.tweet-input {
-	border: none; // clear the other border applied by bootstrap
-	outline: none; // clear outline applied by bootstrap
-
-	border-bottom: 2px $faded-blue solid;
-	font-family: "Inter", sans-serif;
-	font-size: 1rem;
-
-	&:focus-visible {
-		border-bottom: 2px $blue solid;
-	}
-}
-
-.username-input {
-	border-bottom: 2px $faded-blue solid;
-	padding: 0.4rem;
-}
-
-.tweet-input {
-	flex: 1;
-	padding: 0.4rem;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
-	resize: none;
-}
-
-.button-container {
-	display: flex;
-}
-
-#errorContainer {
-	flex: 1;
-	display: flex;
-	align-items: center;
-	font-family: "Inter", sans-serif;
-	font-size: 0.8rem;
-	color: red;
-	opacity: 0;
-}
-
-#errorContainer.visible {
-	opacity: 1 !important;
-}
-
-.tweet-button {
-	background-color: $blue;
-	color: white;
-	font-family: "Roboto", sans-serif;
-	font-weight: 600;
-	border: none;
-	border-radius: 2rem;
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-	font-size: 1rem;
-
-	&:hover {
-		background-color: rgb(31, 151, 226);
-	}
-}
-
-@media only screen and (max-width: 575px) {
-	.middle-section {
-		width: 100vw;
-	}
-	.left-section,
-	.right-section {
-		width: 0;
-	}
-}
-
-@media only screen and (min-width: 567px) and (max-width: 767px) {
-	.middle-section {
-		width: 70vw;
-	}
-	.left-section {
-		width: 15vw;
-	}
-	.right-section {
-		width: 0;
-	}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	.middle-section {
-		width: 60vw;
-	}
-	.left-section,
-	.right-section {
-		width: 20vw;
-	}
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-	.middle-section {
-		width: 60vw;
-	}
-	.left-section,
-	.right-section {
-		width: 20vw;
-	}
-}
-
-// @media only screen and (min-width: 1051px) and (max-width: 1199px) {
-// 	.middle-section {
-// 		background-color: blue;
-// 		width: 60vw;
-// 	}
-// }
-
-@media only screen and (min-width: 1200px) {
-	.middle-section {
-		width: 40vw;
-	}
-	.left-section,
-	.right-section {
-		width: 30vw;
-	}
 }
